@@ -14,5 +14,4 @@ def post_detail(request, pk):
 
 def post_new(request):
     form = PostForm()
-    return render(request, 'firstapp/post_edit.html', {'from':form})
-
+    return render(request, 'firstapp/post_edit.html', {'form':form})
